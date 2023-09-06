@@ -1,0 +1,564 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+}
+body{
+    background: url("./assets/background.png");
+    width: 100vw;
+    object-fit: cover;
+    /* background-size: auto; */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    /* background-repeat: ; */
+}
+.first{
+    height: 100%;
+    width: 100%;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); 
+    z-index: -1;
+  }
+
+nav{
+    height: 86px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1050px;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+}
+.logo{
+    max-width: 178px;
+    width: 100%;
+    margin-right: auto;
+    align-items: center;
+}
+.dropMenu{
+    padding: 6px 20px;
+    border: 1px solid rgb(162, 145, 145);
+    border-radius: 5px;
+    color: white;
+    margin-left: auto;
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.624);
+}
+.signupButton{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 13px;
+    white-space: nowrap;
+    border: none;
+    background-color: rgb(236, 6, 6);
+    border-radius: 5px;   
+}
+
+.mainTextParent{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.mainTextParent h1{
+    font-size: 50px;
+}
+.mainTextParent .second{
+    font-size: 27px;
+    font-weight: 500;
+    margin:20px 0;
+}
+.mainTextParent .third{
+    font-size: 22px;
+}
+.email-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    /* align-items: center; */
+}
+.email-section input{
+    padding: 16px 15px;
+    max-width: 376px;
+    font-size: 18px;
+    color: white;
+    border: 1px solid rgb(145, 145, 145);
+    border-radius: 5px;
+
+    background-color: rgba(0, 0, 0, 0.574);
+    width: 100%;
+    margin-right: 5px;
+}
+.email-section input::placeholder{
+    color: rgba(255, 255, 255, 0.559);
+}
+.email-section button{
+    padding: 14px 15px;
+    font-size: 25px;
+    width: 100%;
+    max-width: 200px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    background-color: red;
+    color: white;
+    justify-content: center;
+}
+.email-section span{
+    font-weight: 900;
+    text-align: center;
+}
+
+/* second  */
+.tvParent{
+    position: relative;
+}
+.tv{
+    background-repeat: no-repeat;
+    width: 30rem;
+    z-index: 2;
+    position: relative;
+}
+ .video{
+    max-width: 350px;
+    top: 75px;
+    z-index: 1;
+    left: 63px;
+    position: absolute;
+}
+
+hr{
+    height: 8px;
+    background-color: rgba(49, 46, 46, 0.918);
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cardParent{
+    width: 100%;
+    background-color: black;
+}
+
+.cardSecond{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;   
+    padding: 4.5rem 0;
+    margin: 0 auto;
+    max-width: 1050px;
+    background-color: black;
+}
+.text{
+    color: white;
+    max-width: 514px;
+    width: 100%;
+}
+.text h1{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.text p{
+    max-width: 514px;
+    font-size: 25px;
+}
+
+/* .third row */
+
+.cardParent2{
+    background-color: black;
+}
+
+.cardThird{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;   
+    padding: 4.5rem 0;
+    position: relative;
+    margin: 0 auto;
+    max-width: 1050px;
+    background-color: black;
+}
+.text2{
+    color: white;
+    max-width: 514px;
+    width: 100%;
+}
+
+.mobileParent{
+    position: relative;
+    width: 100%;
+}
+.mobile{
+    background-repeat: no-repeat;
+    width: 29rem;
+    z-index: 1;
+    /* position: relative; */
+}
+.cardShow{
+    color: white;
+    display: flex;
+    bottom: 2rem;
+    right: 10rem;
+    z-index: 2;
+    padding: 5px 20px;
+    border-radius: 10px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid grey;
+    background-color: black;
+}
+.mobileParent .download_logo{
+    width: 50px;
+}
+.cardShow span{
+    color: rgb(41, 41, 238);
+}
+.cardShow p{
+    padding: 0 10px;
+    text-align: center;
+}
+.text2 h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.text2 p{
+    font-size: 22px;
+}
+
+
+/* fourth  */
+
+.cardParent3{
+    width: 100%;
+    background-color: black;
+}
+
+.cardFourth{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;   
+    padding: 4.5rem 0;
+    margin: 0 auto;
+    max-width: 1050px;
+    background-color: black;
+}
+.text3{
+    color: white;
+    max-width: 514px;
+    width: 100%;
+}
+
+.tv2{
+    background-repeat: no-repeat;
+    width: 30rem;
+    z-index: 2;
+    position: relative;
+}
+.video2{
+        max-width: 305px;
+        top: 45px;
+        z-index: 1;
+        left: 75px;
+        position: absolute;
+}
+
+.text3 h1{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.text3 p{
+    max-width: 514px;
+    font-size: 25px;
+}
+
+/* fifth  */
+.cardParent4{
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+.cardFifth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgParent .kidsImage{
+    width: 100%;
+}
+.text4{
+    max-width: 450px;
+}
+.text4 h1{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+.text4 p{
+    max-width: 514px;
+    font-size: 25px;
+}
+
+/* fifth  */
+.cardParent5{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 30px 150px;
+    flex-direction: column;
+    align-items: center;
+}
+.cardParent5 h1{
+    font-weight: 800;
+    font-size: 50px;
+    margin: 50px 0;
+}
+.cardParent5 .btn{
+    background-color: rgb(43, 43, 43);
+    color: white;
+    border: none;
+    font-size: 25px;
+    border-radius: 0;
+    text-align: left;
+    padding: 20px 0;
+    padding-left: 25px;
+}
+.cardParent5 .card{
+    background-color: rgb(43, 43, 43);
+    font-size: 20px;
+    border-radius: 0;
+}
+.anoying{
+    margin-top: 10px;
+    width: 100%;
+    background-color: rgb(43, 43, 43);
+    color: white;
+    border: none;
+    font-size: 25px;
+    border-radius: 0;
+    text-align: left;
+    padding: 20px 0;
+    transition: all 0.25s;
+    padding-left: 25px;
+    
+}
+.anoying:hover{
+  background-color: rgb(100, 98, 98);
+}
+
+.last{
+    /* height: 413px; */
+    background-color: black;
+    padding: 60px 20px;
+}
+.listParent{
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 10px;
+}
+.listParent li a{
+    color: rgb(184, 184, 184);
+    font-size: 15px;
+}
+
+
+/* Responsiveness//////////////// */
+@media screen and (max-width: 615px){
+
+    *{
+        overflow-x: hidden;
+    }
+
+
+    .logo{
+        width: 145px;
+    }
+    .signupButton{
+        width: 100px;
+    }
+
+    .email-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .email-section input{
+        margin-bottom: 10px;
+    }
+  
+    .mainTextParent h1{
+        font-size: 35px;
+    }
+    .mainTextParent .second{
+        font-size: 22px;
+    }
+    .mainTextParent .third{
+        font-size: 19px;
+        font-weight: bold;
+    }
+
+    .email-section button{
+        width: 160px;
+        font-size: 20px;
+    }
+    .email-section span{
+        font-size: 20px;
+    }
+    .listParent{
+        grid-template-columns: auto auto;
+    }
+
+}
+
+@media screen and (max-width: 935px){
+    
+    .cardSecond{
+        padding-top: 70px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .text h1{
+        font-size: 35px;
+    }
+    .text p{
+        font-size: 18px;
+    }
+    
+    
+
+    .cardThird{
+        padding-top: 70px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .mobileParent{
+        width: 100%;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .mobile{
+        position: relative;
+    }
+    .cardShow{
+     display: flex;
+     justify-content: center;
+     justify-content: space-between;
+     ruby-position: inline;
+      min-width: 20rem;
+      /* width: 100%; */
+      bottom: 2rem;
+      right: 24%;
+      left: 20%;
+
+    }
+    .text2{
+        order: 1;
+    }
+
+    .text2 h1{
+        font-size: 30px;
+        /* white-space: nowrap; */
+    }
+    .text2 p{
+        font-size: 18px;
+    }
+
+
+
+    /* fourth  */
+    .carParent3{
+        height: 100vh;
+    }
+    .cardFourth{
+        padding: 50px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .text3 h1{
+        font-size: 35px;
+    }
+    .text3 p{
+        font-size: 18px;
+    }
+    
+    .tvParent{
+        margin: 20px 0;
+    }
+
+
+    /* fifth  */
+
+    .cardParent4{
+        padding: 70px 0;
+    }
+
+    .cardFifth{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .imgParent{
+        order: 2;
+    }
+    .text4{
+        order:1;
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .text4 h1{
+        font-size: 35px;
+    }
+    .text4 p{
+        font-size: 18px;
+    }
+.cardParent5{
+    width: 100%;
+    padding:30px;
+
+}
+    .cardParent5 h1{
+        width: 100%;
+        font-size: 35px;
+        /* white-space: nowrap; */
+    }
+
+}
